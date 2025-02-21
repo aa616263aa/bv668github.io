@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <!-- saved from url=(0018)https://aa616263aa.github.io/bv668github.io/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>BV澳门娱乐</title>
@@ -137,7 +136,7 @@
     <style>
        .skype-button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 10px 30px;
             background-color: #00aff0;
             color: white;
             text-decoration: none;
@@ -152,7 +151,7 @@
 </head>
 
 <body>
-    <a href="skype:your_skype_name?chat" class="skype-button">Skype聊天</a>
+    <a href="skype:[your](https://join.skype.com/invite/xe2SdbSG9eyh)_skype_name?chat" class="skype-button">Skype聊天</a>
 </body>
 
 </html>
