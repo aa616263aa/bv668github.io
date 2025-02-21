@@ -109,7 +109,7 @@
 			<div class="miaoinpt miaoinpt1">5187ms</div>
 			<div class="miaoinpt miaoinpt2">搭建网页</div>
 			<!-- 进入链接 -->
-			<a href="https://join.skype.com/invite/sQRvO8dK6bs9" target="_blank" class="dw">联系Skype</a>
+			<a href="https://join.skype.com/invite/xe2SdbSG9eyh" target="_blank" class="dw">联系Skype</a>
 		<span style="display: none;"><em>0.038秒</em></span><span style="display: none;"><em>5.187秒</em></span></li>
 		
 	</ul>
