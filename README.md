@@ -1,6 +1,30 @@
-    <!-- 放置 Skype URI 链接 -->
-    <a href="skype:your_skype_name?call">点击通过 Skype 咨询产品</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skype Button Example</title>
+    <style>
+       .skype-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00aff0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+       .skype-button:hover {
+            background-color: #0077a8;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="skype:your_skype_name?chat" class="skype-button">Skype聊天</a>
 </body>
+
 </html>
 <!DOCTYPE html>
 <!-- saved from url=(0018)https://aa616263aa.github.io/bv668github.io/ -->
