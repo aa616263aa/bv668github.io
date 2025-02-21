@@ -1,3 +1,7 @@
+    <!-- 放置 Skype URI 链接 -->
+    <a href="skype:your_skype_name?call">点击通过 Skype 咨询产品</a>
+</body>
+</html>
 <!DOCTYPE html>
 <!-- saved from url=(0018)https://aa616263aa.github.io/bv668github.io/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
