@@ -151,7 +151,7 @@
 </head>
 
 <body>
-    <a href="skype:https://join.skype.com/invite/xe2SdbSG9eyh?chat" class="skype-button">Skype聊天</a>
+    <a href="skype:xe2SdbSG9eyh?chat">开始Skype文字聊天</a>
 </body>
 
 </html>
