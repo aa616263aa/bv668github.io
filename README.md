@@ -49,7 +49,7 @@
 <div class="cl"></div>
 <div class="kf" style="padding-top:15px;">
 	<!-- //客服链接 -->
-	<a href="https://klc-8430.talkvv.com/#" target="_blank" class="kf">
+	<a href="https://klc-8430.talkvv.com/" target="_blank" class="kf">
 		<img src="files/kf.gif" alt="kf">
 	</a>
 </div>
