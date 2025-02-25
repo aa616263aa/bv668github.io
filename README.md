@@ -1,36 +1,91 @@
-<!-- 头部保留原始结构 -->
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- 元标签和CSS链接（已调整顺序） -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <!-- 其他CSS -->
-  <link type="text/css" rel="stylesheet" href="./BV澳门娱乐_files/chatStyle.css">
+<style>
+.nav-control {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.nav-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 15px 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover {
+  background: #4CAF50;
+  transform: scale(1.1);
+}
+
+.page-container {
+  display: none;
+  padding: 80px 20px 60px;
+}
+
+.active-page {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
 </head>
 <body>
-  <!-- 页面内容 -->
 
-  <!-- 修正后的Swiper轮播（仅保留一个） -->
-  <div class="ban swiper-container">
-    <ul class="swiper-wrapper">
-      <li class="swiper-slide"><img src="./BV澳门娱乐_files/1.jpg" alt=""></li>
-      <li class="swiper-slide"><img src="./BV澳门娱乐_files/4.jpg" alt=""></li>
-      <li class="swiper-slide"><img src="./BV澳门娱乐_files/2.jpg" alt=""></li>
-    </ul>
-  </div>
+<!-- 导航按钮 -->
+<div class="nav-control">
+  <button class="nav-btn" onclick="switchPage(-1)">↑</button>
+  <button class="nav-btn" onclick="switchPage(1)">↓</button>
+</div>
 
-  <!-- 其他内容 -->
+<!-- 页面容器 -->
+<div id="page1" class="page-container active-page">
+  <!-- 原页面内容 -->
+  <div class="platform-header">页面1 - 飞天BV平台</div>
+  <!-- 保持原有页面结构 -->
+</div>
 
-  <!-- 修正后的脚本加载 -->
-  <script src="./BV澳门娱乐_files/jquery-1.11.1.min.js"></script>
-  <script src="./BV澳门娱乐_files/swiper.min.js"></script>
-  <script src="./BV澳门娱乐_files/cesu.js"></script>
-  <script>
-    // Swiper初始化
-    var swiper = new Swiper('.swiper-container', {
-      loop: true,
-      autoplay: { delay: 3000 }
-    });
-  </script>
+<div id="page2" class="page-container">
+  <div class="platform-header">页面2 - 客服系统</div>
+  <!-- 其他页面内容 -->
+</div>
+
+<div id="page3" class="page-container">
+  <div class="platform-header">页面3 - 用户中心</div>
+  <!-- 其他页面内容 -->
+</div>
+
+<script>
+let currentPage = 1;
+const totalPages = 3;
+
+function switchPage(step) {
+  const newPage = Math.max(1, Math.min(totalPages, currentPage + step));
+  if(newPage === currentPage) return;
+  
+  document.getElementById(`page${currentPage}`).classList.remove('active-page');
+  document.getElementById(`page${newPage}`).classList.add('active-page');
+  currentPage = newPage;
+  
+  // 自动滚动到顶部
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
 </body>
 </html>
+ 
